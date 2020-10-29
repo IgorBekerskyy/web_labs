@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+     <header class="header">
+        <div class="header__row">
+            <div class="header__left-block">
+                <a href="" class="header__title">Planes</a>
+                <div class="header_nav">
+                    <ul class="header__ul">
+                        <li class="header__li grey__li"><a class="header__a" href="">All Planes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__menu">
+                <input 
+                    id="header__input"
+                    class="header__input" 
+                    type="text" 
+                    placeholder="Search Plane">
+                <button id="clear__btn" class="header__button clear_btn">Clear</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="cover">
+        <div class="left__block">
+            <div class="left__block__content">
+                <div class="left__block__content__sort">
+                    <h2 class="left__block__title manage_plane">Sort Planes</h2>
+                    <div class="sort">
+                        <label for="sort__select">Sort By</label>
+                        <select id="sort__select" onchange="showPlaneListSorted()">
+                            <option value="none">None</option>
+                            <option value="name">Name</option>
+                            <option value="volume">Volume</option>
+                            <option value="price">Price</option>
+                            <option value="number_of_passengers">Number of passengers</option>
+                            <option value="spare_engine">Spare Engine</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="left__block__content__count">
+                    <h3 class="left__block__title">Count total price:</h3>
+                    <div class="count__div">
+                        <button class="count__btn" onclick="countTotalPrice()">To count</button>
+                    </div>
+                    <h4 id="total__price" class="left__block__title">Price of all planes:</h4>
+                </div>
+            </div>
+            <div class="vl"><span></span></div>
+        </div>
+        <div class="right__block">
+            <ul id="plane__list" class="plane__list">
+                
+
+            </ul>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
