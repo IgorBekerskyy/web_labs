@@ -1,69 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My_Lab</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+    <title>myshOOes.store</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-     <header class="header">
-        <div class="header__row">
-            <div class="header__left-block">
-                <a href="" class="header__title">Planes</a>
-                <div class="header_nav">
-                    <ul class="header__ul">
-                        <li class="header__li grey__li"><a class="header__a" href="">All Planes</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header__menu">
-                <input 
-                    id="header__input"
-                    class="header__input" 
-                    type="text" 
-                    placeholder="Search Plane">
-                <button id="clear__btn" class="header__button clear_btn">Clear</button>
-            </div>
+    <header class="header">
+        <div class="header__logo">
         </div>
-    </header>
-
-    <div class="cover">
-        <div class="left__block">
-            <div class="left__block__content">
-                <div class="left__block__content__sort">
-                    <h2 class="left__block__title manage_plane">Sort Planes</h2>
-                    <div class="sort">
-                        <label for="sort__select">Sort By</label>
-                        <select id="sort__select" onchange="showPlaneListSorted()">
-                            <option value="none">None</option>
-                            <option value="name">Name</option>
-                            <option value="volume">Volume</option>
-                            <option value="price">Price</option>
-                            <option value="number_of_passengers">Number of passengers</option>
-                            <option value="spare_engine">Spare Engine</option>
-                        </select>
-                    </div>
-                </div>
-                <hr>
-                <div class="left__block__content__count">
-                    <h3 class="left__block__title">Count total price:</h3>
-                    <div class="count__div">
-                        <button class="count__btn" onclick="countTotalPrice()">To count</button>
-                    </div>
-                    <h4 id="total__price" class="left__block__title">Price of all planes:</h4>
-                </div>
-            </div>
-            <div class="vl"><span></span></div>
-        </div>
-        <div class="right__block">
-            <ul id="plane__list" class="plane__list">
-                
-
+        <nav class="header__nav">
+            <ul>
+                <li class="active"><a href="#">My Planes</a></li>
+                <li><a href="create_plane.html">Create planes</a></li>
             </ul>
-        </div>
-    </div>
-    <script src="js/main.js"></script>
+        </nav>
+        <form class="header__form">
+            <input type="text" placeholder="Type something..." id="typedPlanes">
+            <button class="header-form__search" id="search" >Search</button>
+            <button class="header-form__clear" onclick="cleanPlanes()">Clear</button>
+        </form>
+    </header>
+    <section class="main-part">
+        <aside class="create-planes">
+            <h1 class="create__title">Create planes</h1>
+            <div class="sort-function">
+                <p class="sort-function__paragraph">Sort by the most <br>expensive planes</p>
+                <input type="checkbox" class="sort" onclick="sortPlanes()">
+            </div>
+            <div class="count-function">
+                <p class="count-function__paragraph">Count total daily expences</p>
+                <button class="count" onclick="countPlanesPrice()">Count</button>
+                <div class="total-expenses">
+                    <p class="total-expenses__paragraph">Total expenses</p>
+                    <p class="total-expenses__sum" id="resultPrice">0$</p>
+                </div>
+            </div>
+        </aside>
+        <section class="my-planes" id="myPlanes"> 
+        </section>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>

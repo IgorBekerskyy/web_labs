@@ -1,0 +1,52 @@
+.my-planes{
+    background-color: var(--secondary-bd-color);
+    width: 1060px;
+    margin-left: 290px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-content: center;
+    min-height: 550px;
+}
+
+.planes-pair{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 270px;
+    height: 400px;
+    margin: 20px 40px;
+}
+
+.planes-pair__image{
+    background-image: url(../images/shoes.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+    width: 270px;
+    height: 150px;
+}
+
+.planes-pair__title{
+    padding: 15px;
+    margin: 0;
+    font-size: 26px;
+}
+
+.planes-pair__paragraph{
+    padding: 0 15px 15px 15px;
+    margin: 0;
+}
+
+.edit-remove__buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit-remove__buttons button{
+    width: 100px;
+}
+
+.remove{
+    border-color: var(--second-text-decoration-color);
+    background-color: var(--secondary-bd-color);
+    color: var(--second-text-decoration-color);
+}

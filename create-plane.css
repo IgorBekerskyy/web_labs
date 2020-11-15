@@ -1,0 +1,145 @@
+/*.main-part {
+    display: flex;
+    margin-top: 108px;
+  }
+  
+  .create-films {
+    height: 650px;
+    width: 240px;
+    background-color: var(--main-bg-color);
+    padding-left: 30px;
+    padding-right: 20px;
+    position: fixed;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create__title {
+    font-size: 30px;
+    font-weight: normal;
+  }
+  
+  .sort-function {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sort {
+    position: relative;
+    width: 46px;
+    height: 22px;
+    -webkit-appearance: none;
+    background-color: var(--main-bg-color);
+    outline: none;
+    border-radius: 14px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.75s;
+  }
+  
+  .sort:checked {
+    background-color: var(--second-text-decoration-color);
+  }
+  
+  .sort:before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 0%;
+    left: 0%;
+    border-radius: 11px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    transform: scale(1.1);
+    transition: 0.75s;
+  }
+  
+  .sort:checked:before {
+    left: 50%;
+  }
+  
+  .count {
+    width: 120px;
+  }
+  
+  .total-responces {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .total-expenses__sum {
+    font-weight: bold;
+  }*/
+  .main-part{
+    display: flex;
+    margin-top: 108px;
+}
+
+.create-planes{
+    height: 550px;
+    width: 250px;
+    background-color: var(--main-bg-color);
+    padding-left: 30px;
+    padding-right: 20px;
+    position: fixed;
+}
+
+.create__title{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.sort-function{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort{
+    position: relative;
+    width: 46px;
+    height: 22px;
+    -webkit-appearance: none;
+    background-color: var(--main-bg-color);
+    outline: none;
+    border-radius: 14px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: .75s;
+}
+
+.sort:checked{
+    background-color: var(--second-text-decoration-color);
+}
+
+.sort:before{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 0%;
+    left: 0%;
+    border-radius: 11px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    background-color: #ffffff;
+    transform: scale(1.1);
+    transition: .75s;
+}
+
+.sort:checked:before{
+    left: 50%;
+}
+
+.count{
+    width: 120px;
+}
+
+.total-expenses{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-expenses__sum{
+    font-weight: bold;
+}
